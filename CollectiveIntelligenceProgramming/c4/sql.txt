@@ -1,0 +1,1 @@
+select b.url, location from wordlocation a, urllist b where b.rowid = a.urlid AND wordid = (select rowid from wordlist where word= @word)
